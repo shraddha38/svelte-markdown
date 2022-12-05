@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Markdown Editor UI - Preview</title>
+</head>
+
+<body>
+  <!-- wrapping container -->
+  <div class="app">
+    <!-- navigation including the controls for the application
+            ! the controls vary according to whether the page displays the editor or the preview
+            for the preview include an icon to modify the text
+            -->
+    <nav class="controls">
+      <button title="Edit markdown" aria-label="Edit markdown">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+          <g transform="translate(5 5)" stroke-width="10" stroke="currentColor" stroke-linejoin="round"
+            stroke-linecap="round" fill="none">
+            <path d="M 73 0 l 17 17 -45 45 -17 0 0 -17 45 -45" />
+            <path d="M 35 10 h -25 a 10 10 0 0 0 -10 10 v 60 a 10 10 0 0 0 10 10 h 60 a 10 10 0 0 0 10 -10 v -25" />
+          </g>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- include hard-coded elements to describe an hypothetical version of the preview -->
+    <section class="preview">
+      <h1>Svelte Markdown Editor</h1>
+
+      <pre><code class="language-html">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"&gt;
+    &lt;g transform="translate(5 5)" stroke-width="10" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" fill="none"&gt;
+        &lt;path d="M 73 0 l 17 17 -45 45 -17 0 0 -17 45 -45" /&gt;
+        &lt;path d="M 35 10 h -25 a 10 10 0 0 0 -10 10 v 60 a 10 10 0 0 0 10 10 h 60 a 10 10 0 0 0 10 -10 v -25" /&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+                    </code></pre>
+    </section>
+  </div>
+</body>
+
+</html>
