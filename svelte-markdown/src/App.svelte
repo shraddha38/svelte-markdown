@@ -1,7 +1,7 @@
 <script>
-  import Editor from './Editor.svelte';
-  import Preview from './Preview.svelte';
-  import { getInitialValue } from './utils.js';
+  import Editor from "./Editor.svelte";
+  import Preview from "./Preview.svelte";
+  import { getInitialValue } from "./utils.js";
 
   // initialize a variable through the value obtained from local storage or from the fallback string
   let markdown = getInitialValue();
@@ -21,8 +21,10 @@
   }
 </script>
 
+<h2>Svelte Markdown Editor</h2>
 <div class="markdown-editor">
   {#if showPreview}
+    <!-- svelte-ignore missing-declaration -->
     <Preview markup={marked(markdown)} on:edit={handleEdit} />
   {:else}
     <Editor {markdown} on:preview={handlePreview} />

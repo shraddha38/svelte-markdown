@@ -1,7 +1,6 @@
 // string used as a fallback in case local storage doesn't have a saved value
 const initialValue = `# Svelte Markdown Editor
-
-## Put up your code here
+## Put up your code here and see the magic
 `;
 
 // utility function returning the initial value for markdown
